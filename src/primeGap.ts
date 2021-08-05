@@ -1,5 +1,5 @@
 function isPrime(x: number): boolean {
-  for (let i = 2; i < Math.sqrt(x); i++) {
+  for (let i = 2; i <= Math.sqrt(x); i++) {
     if (x % i === 0) {
       return false;
     }
@@ -46,7 +46,6 @@ function gap(g: number, m: number, n: number): number[] | null {
 
       // check numbers in between
       if (!hasPrimeBetween(x, x + g)) {
-        console.log(x, x + g);
         return [x, x + g];
       }
     }

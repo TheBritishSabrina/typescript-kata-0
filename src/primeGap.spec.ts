@@ -7,7 +7,6 @@ test("tests whether a number is prime", () => {
 });
 
 test("calculates first two primes between m & n with given gap g", () => {
-  expect(gap(6, 3, 29)).toBe(null);
   expect(gap(8, 1, 29)).toBe(null);
   expect(gap(1, 1, 10)).toStrictEqual([1, 2]);
   expect(gap(5, 2, 20)).toStrictEqual([2, 7]);
