@@ -1,4 +1,10 @@
-import gap from "./primeGap";
+import { isPrime, gap } from "./primeGap";
+
+test("tests whether a number is prime", () => {
+  expect(isPrime(10)).toBe(false);
+  expect(isPrime(7)).toBe(true);
+  expect(isPrime(7549)).toBe(true);
+});
 
 test("calculates first two primes between m & n with given gap g", () => {
   expect(gap(1, 1, 10)).toBe([1, 2]);

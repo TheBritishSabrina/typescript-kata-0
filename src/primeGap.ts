@@ -12,4 +12,4 @@ function gap(g: number, m: number, n: number): number[] | null {
   return null;
 }
 
-export default gap;
+export { isPrime, gap };
